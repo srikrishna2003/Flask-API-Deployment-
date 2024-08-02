@@ -42,3 +42,16 @@ def bfhl_get():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+#Deployment Procedure
+flask
+web: python app.py
+git init
+git add .
+git commit -m "Initial commit"
+heroku create your-app-name
+git push heroku master
+
+#Testing
+POST Request:
+
