@@ -53,5 +53,10 @@ heroku create your-app-name
 git push heroku master
 
 #Testing
-POST Request:
+#POST Request
+curl -X POST https://your-app-name.herokuapp.com/bfhl -H "Content-Type: application/json" -d '{"data": ["M", "1", "334", "4", "B"]}'
+GET Request:
+curl https://your-app-name.herokuapp.com/bfhl
+
+
 
